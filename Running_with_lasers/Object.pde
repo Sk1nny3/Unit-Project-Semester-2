@@ -27,9 +27,12 @@ class Object
   
   void setpos(float _x, float _y)
   {
-    x=_x;
-    y=_y;
+   x=_x;
+   y=_y;
   }
   
-  void 
+  void setpic(String filename)
+  {
+   pic=loadImage(filename);
+  }
 }
