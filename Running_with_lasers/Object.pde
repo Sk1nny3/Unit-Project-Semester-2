@@ -35,4 +35,15 @@ class Object
   {
    pic=loadImage(filename);
   }
+  
+  float getX()
+  {
+    return y;
+  }
+  
+  float getY()
+  {
+    return x;
+  }
+  
 }
