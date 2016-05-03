@@ -1,16 +1,20 @@
 float px;
+int m;
 Sentry S1;
 Player Player;
 
 void setup()
 {
  fullScreen();
+ Player = new Player();
 }
 
 void draw()
 {
-  int m = millis();
-  noStroke();
-  fill(m % 255);
-  rect(25, 25, 50, 50);
+
+  Player.update();
+  background(0);
+  text(millis(),25,25);
+  m = millis();
+
 }

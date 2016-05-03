@@ -1,12 +1,17 @@
 class Player extends Object
 {
+
   boolean right;
   boolean left;
 
+
   Player()
+  
   {
     super();
+   
   }
+
 
   void draw()
   {
@@ -48,4 +53,5 @@ class Player extends Object
       left=false;
     }
   }
+
 }
