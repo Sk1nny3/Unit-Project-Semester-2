@@ -1,12 +1,5 @@
-class Player
+class Player extends Object
 {
-  float x;
-  float y;
-  float w;
-  float h;
-  float spd;
-  float dir;
-  PImage pic;
   boolean right;
   boolean left;
 
@@ -24,11 +17,11 @@ class Player
   {
     if (left=true);
     {
-      x=x+2;
+      super.x=super.x+2;
     }
     if (right=true);
     {
-      x=x-2;
+      super.x=super.x-2;
     }
   }
 

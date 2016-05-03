@@ -22,7 +22,7 @@ class Object
   
   void update()
   {
-    
+    image(pic,x,y,w,h);
   }
   
   void setpos(float _x, float _y)
