@@ -5,16 +5,26 @@ Player Player;
 
 void setup()
 {
- fullScreen();
- Player = new Player();
+  fullScreen();
+  Player = new Player();
 }
 
 void draw()
 {
 
-  Player.update();
   background(0);
-  text(millis(),25,25);
+  Player.update();
+  text(millis(), 25, 25);
   m = millis();
+  Player.Draw();
+}
 
+void keyPressed()
+{
+  Player.Pressed();
+}
+
+void keyReleased()
+{
+  Player.Released();
 }
