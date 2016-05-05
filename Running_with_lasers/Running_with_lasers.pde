@@ -15,6 +15,10 @@ float px;
 int m;
 Sentry S1;
 Player Player;
+Charger Steve;
+float playerX;
+float playerY;
+
 
 void setup()
 {
@@ -22,6 +26,8 @@ void setup()
  smooth();
  fullScreen();
  Player = new Player();
+ Steve= new Charger();
+ Steve.setpos(width-50, Steve.getY());
  //Init box2d
  box2d = new Box2DProcessing(this);
  //create the world and gravity
@@ -43,15 +49,21 @@ void draw()
 {
   background(255);
   box2d.step();
-  Player.update();
+  Player.Draw();
+  Steve.Draw();
+  Player.Update();
+  Steve.Update();
   fill(0);
   text(millis(),25,25);
   m = millis();
- 
+   
   for (Boundary wall: boundaries) 
   {
     wall.display();
   }
+  
+  playerX = Player.getX();
+  playerY = Player.getY();
 }
 
 void keyPressed()

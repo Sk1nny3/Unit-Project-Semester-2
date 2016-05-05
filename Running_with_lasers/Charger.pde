@@ -4,19 +4,29 @@ class Charger extends Object
   Charger()
   {
     super();
-    i= (int)random(1,3);
+    i= (int)random(1, 3);
+    super.setpic("Charger.jpg");
+  }
+
+  void Update()
+  {
+    Dir();
+  }
+
+  void Dir()
+  {
+    if (Player.x<x)
+    {
+      x=x-6;
+    }
+    else
+    {
+      x=x+6;
+    }
   }
 
   void Draw()
   {
-    if (i == 1)
-    {
-      
-    }
-    if (i == 2)
-    {
-      //spawn on right side
-    }
-    
+    image(pic, x, y);
   }
 }
