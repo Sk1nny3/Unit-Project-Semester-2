@@ -6,14 +6,12 @@ class Player extends Object
 
 
   Player()
-  
   {
     super();
-   
   }
 
 
-  void draw()
+  void Draw()
   {
     loadImage("player.png");
   }
@@ -30,7 +28,7 @@ class Player extends Object
     }
   }
 
-  void keyPressed()
+  void Pressed()
   {
     if (key=='d')
     {
@@ -42,7 +40,7 @@ class Player extends Object
     }
   }
 
-  void keyReleased()
+  void Released()
   {
     if (key=='d')
     {

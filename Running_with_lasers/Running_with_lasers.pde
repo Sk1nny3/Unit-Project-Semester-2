@@ -18,6 +18,7 @@ Player Player;
 
 void setup()
 {
+
  smooth();
  fullScreen();
  Player = new Player();
@@ -51,5 +52,14 @@ void draw()
   {
     wall.display();
   }
+}
 
+void keyPressed()
+{
+  Player.Pressed();
+}
+
+void keyReleased()
+{
+  Player.Released();
 }
