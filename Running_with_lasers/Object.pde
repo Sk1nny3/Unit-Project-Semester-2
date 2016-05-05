@@ -11,6 +11,7 @@ class Object
   
   Object()
   {
+    //super(10,10);
     x=10;
     y=10;
     w=10;
@@ -45,5 +46,5 @@ class Object
   {
     return x;
   }
-  
+    
 }
