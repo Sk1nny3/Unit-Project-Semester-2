@@ -17,12 +17,7 @@ class Charger extends Object
     }
   }
 
-  void Update()
-  {
-    Dir();
-  }
-
-  void Dir()
+  void Draw()
   {
     if (playerLeft==true)
     {
@@ -32,10 +27,5 @@ class Charger extends Object
     {
       x=x-6;
     }
-  }
-
-  void Draw()
-  {
-    image(pic, x, y);
   }
 }
