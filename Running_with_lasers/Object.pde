@@ -42,6 +42,7 @@ class Object
     return y;
   }
   
+  
   float getY()
   {
     return x;
