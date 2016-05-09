@@ -6,7 +6,6 @@ import org.jbox2d.dynamics.*;
 
 Box2DProcessing box2d;
 
-
 ArrayList<Boundary> boundaries;
 ArrayList<Box> boxes;
 
