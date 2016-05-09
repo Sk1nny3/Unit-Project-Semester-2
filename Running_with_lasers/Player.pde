@@ -8,23 +8,28 @@ class Player extends Object
   Player()
   {
     super();
+    super.setpic("player.png");
   }
-
+  
+  void Update()
+{
+  move();
+}
 
   void Draw()
   {
-    loadImage("player.png");
+    image(pic,x,y);
   }
 
   void move()
   {
-    if (left=true);
+    if (left==true)
     {
-      super.x=super.x+2;
+      x=x-2;
     }
-    if (right=true);
+    if (right==true)
     {
-      super.x=super.x-2;
+      x=x+2;
     }
   }
 
