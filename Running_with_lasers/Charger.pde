@@ -6,7 +6,7 @@ class Charger extends Object
   {
     super();
     i= (int)random(1, 3);
-    super.setpic("Charger.png");
+    super.setpic("Charger.png",50,50);
     if (Player.x<x)
     {
       playerLeft=true;

@@ -8,7 +8,7 @@ class Player extends Object
   Player()
   {
     super();
-    super.setpic("player.png");
+    super.setpic("player.png",40,40);
   }
   
   void Update()
@@ -25,11 +25,11 @@ class Player extends Object
   {
     if (left==true)
     {
-      x=x-2;
+      x=x-12;
     }
     if (right==true)
     {
-      x=x+2;
+      x=x+12;
     }
   }
 

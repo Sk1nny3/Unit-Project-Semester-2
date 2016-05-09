@@ -2,8 +2,8 @@ class Object
 {
   float x;
   float y;
-  float w;
-  float h;
+  int w;
+  int h;
   float spd;
   float dir;
   PImage pic;
@@ -32,16 +32,16 @@ class Object
    y=_y;
   }
   
-  void setpic(String filename)
+  void setpic(String filename, int _h, int _w)
   {
    pic=loadImage(filename);
+   pic.resize(_w,_h);  
   }
   
   float getX()
   {
     return y;
   }
-  
   
   float getY()
   {
