@@ -18,7 +18,12 @@ class Object
     h=10;
     spd=2;
     dir=1;
-    pic=null;
+    pic=loadImage("player.png");
+  }
+  
+  void update()
+  {
+    image(pic,x,y,w,h);
   }
   
   void setpos(float _x, float _y)
@@ -29,17 +34,17 @@ class Object
   
   void setpic(String filename)
   {
-   pic = loadImage(filename);
+   pic=loadImage(filename);
   }
   
   float getX()
   {
-    return x;
+    return y;
   }
   
   float getY()
   {
-    return y;
+    return x;
   }
     
 }
