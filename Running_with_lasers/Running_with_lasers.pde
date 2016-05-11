@@ -26,7 +26,6 @@ void setup()
  fullScreen();
  Player = new Player();
  Steve= new Charger();
- Steve.setpos(width-50, Steve.getY());
  //Init box2d
  box2d = new Box2DProcessing(this);
  //create the world and gravity

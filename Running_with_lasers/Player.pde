@@ -8,7 +8,9 @@ class Player extends Object
   Player()
   {
     super();
-    super.setpic("player.png",40,40);
+    super.setpic("player.png",80, 80);
+    x=width/2;
+    y=height-90;
   }
   
   void Update()

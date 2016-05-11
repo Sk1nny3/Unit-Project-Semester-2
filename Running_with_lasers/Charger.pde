@@ -5,8 +5,18 @@ class Charger extends Object
   Charger()
   {
     super();
+    super.setpic("Charger.png", 100, 100);
     i= (int)random(1, 3);
-    super.setpic("Charger.png",50,50);
+    if (i==1)
+    {
+      x=width-100;
+      y=height-106;
+    }
+    if (i==2)
+    {
+      x=100;
+      y=height-106;
+    }
     if (Player.x<x)
     {
       playerLeft=true;
@@ -26,11 +36,11 @@ class Charger extends Object
   {
     if (playerLeft==true)
     {
-      x=x+6;
+      x=x-6;
     } 
     if (playerLeft==false)
     {
-      x=x-6;
+      x=x+6;
     }
   }
 
