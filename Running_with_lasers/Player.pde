@@ -3,7 +3,7 @@ class Player extends Object
 
   boolean right;
   boolean left;
-
+  boolean isAlive;
 
   Player()
   {
@@ -11,16 +11,24 @@ class Player extends Object
     super.setpic("player.png",80, 80);
     x=width/2;
     y=height-90;
+    isAlive = true;
   }
   
   void Update()
 {
   move();
+  if (dist(Steve.x,x,Steve.y,y)<80)
+  {
+    isAlive=false;
+  }
 }
 
   void Draw()
   {
+    if (isAlive==true)
+    {
     image(pic,x,y);
+    }
   }
 
   void move()
